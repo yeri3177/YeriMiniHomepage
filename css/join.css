@@ -1,0 +1,114 @@
+/* 중앙콘텐츠 영역 전체 */
+#middleContents	{
+    background-color: #ff841831; /* 배경색 */
+    height: 1100px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* 영역확인용 */
+    /* border : 1px solid black; */
+}
+
+/* #middleContents > 메인콘텐츠 영역 */
+#mainContent{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 45px;
+
+    /* 영역 확인용 */
+    /* border : 1px solid blue; */
+}
+
+
+/* 회원가입 폼 */
+#joinFrm {
+    margin: 0 auto;
+    padding: 40px 30px;
+    border: 12px inset #fc7f13;
+    border-radius: 30px;
+    width: 400px;
+    background-color: #ff841831;
+
+}
+
+.inputText {
+    margin: 7px 0;
+    border-radius: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    padding-left: 40px;
+
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+
+    font-size: 17px;
+}
+
+/* input:text에 백그라운드 설정 */
+#userId {
+    background-image: url('../image/user-solid.svg');
+}
+
+#pwd, #pwdChk {
+    background-image: url('../image/unlock-alt-solid.svg');
+}
+
+#userName {
+    
+    background-image: url('../image/id-badge-regular.svg');
+}
+
+#emailId {
+    background-image: url('../image/envelope-open-text-solid.svg');
+}
+
+
+.text1 {
+    width: 300px;
+    height: 40px;
+    
+}
+
+.text2 {
+    width: 130px;
+    height: 35px;
+}
+
+.req {
+    color: red;
+}
+
+.sel {
+    color: blue;
+}
+
+#joinBtn {
+    width:130px;
+    height: 45px;
+    margin-left: 90px;
+    background-color: #ff963a;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/* 이메일 주소값 */
+select {
+    width: 150px;
+    height: 30px;
+    font-size: 17px;
+    margin-left: 153px;
+}
+
+#emailAddress {
+    margin: 7px 0;
+    border-radius: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    font-size: 17px;
+    width: 150px;
+}
+
+#pwdText {
+    margin: 0;
+}

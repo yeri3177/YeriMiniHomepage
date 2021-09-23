@@ -1,0 +1,319 @@
+/* 중앙콘텐츠 영역 전체 */
+#middleContents	{
+    background-color: #ff841831; /* 배경색 */
+    /* float:left;  */
+    height: 685px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    /* 영역확인용 */
+    /* border : 1px solid black; */
+}
+
+/* #middleContents > 메인콘텐츠 영역 */
+#mainContent{
+    float: left;
+    /* width:980px; */
+    width: 55%;
+    height: 100%;
+    margin-left: 150px;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    /* 영역 확인용 */
+    /* border : 1px solid blue; */
+}
+
+/* #middleContents > 사이드콘텐츠 영역 */
+#sideContent{
+    float: left;
+    /* width:300px; */
+    width: 26%;
+    /* height: 600px; */
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+
+    /* 영역 확인용 */
+    /* border : 1px solid red; */
+}
+
+/* 사이드콘텐츠 > 로그인, 코로나 영역틀 */
+.sideLogin, .covid {
+    border : 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    background-color: #fabd889f;
+    padding: 10px;
+    margin : 10px 0;
+
+    min-width: 350px;
+}
+
+/* 사이드콘텐츠 > 로그인 */
+.sideLogin table {
+    margin: 0 auto;
+    padding-top: 3px;
+}
+
+.sideLogin table input {
+    border-radius: 7px;
+    border: 1px solid rgb(158, 158, 158);
+    padding-left: 35px;
+
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 7px 3px;
+
+    font-size:17px;
+    width: 180px;
+    height: 30px;
+}
+
+/* input:text에 백그라운드 설정 */
+#userid {
+    background-image: url('../image/user-solid.svg');
+}
+
+#password, #passwordChk {
+    background-image: url('../image/unlock-alt-solid.svg');
+}
+
+
+/* 로그인 테이블 영역확인용  */
+/* table, td {
+    border: 1px solid blue;
+} */
+
+/* 로그인 버튼 */
+.sideLogin button {
+    background-color: #ff8518;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border : 1px solid rgb(168, 168, 168);
+    margin-left: 5px;
+
+    width: 100px;
+    height: 65px;
+}
+
+.sideLogin button:hover {
+    cursor: pointer;
+}
+
+.sideLogin input {
+    width: 170px;
+}
+
+/* 코로나 감염현황 영역 */
+.covid {
+    text-align: center;
+    font-size: 20px;
+}
+
+.covid img {
+    width: 26px;
+    position: relative;
+    left: -5px;
+    top: -2px;
+}
+
+.covid a{
+    text-decoration: none;
+    color: black;
+}
+
+.covid a:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+#tabMenu {
+    border : 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+}
+
+/* 탭 메뉴 */
+#tabMenu{  
+    height: 420px;   
+    min-width: 350px;
+}
+
+#tabMenu input[type="radio"] {
+    display:none;  
+}
+
+#tabMenu label {  
+    display:inline-block;
+    margin: 0; 
+    padding: 15px 25px; 
+    font-weight: bold;   
+    text-align: center; 
+    color: gray;  
+    border:1px solid transparent; 
+}
+
+#tabMenu label:hover {  
+    cursor:pointer;
+}
+#tabMenu input:checked + label { 
+    color: white;
+    border-radius: 10% 10% 0 0;
+
+    background-color: #ff8518;
+
+    /* border-bottom: 3px solid white; */
+}
+
+.tabContent { 
+    display: none;
+    border-top: 2px dashed rgb(165, 165, 165);
+}
+
+#notice ul {
+    margin-left: 20px;
+}
+#notice ul li {
+    font-size:16px;
+    line-height:3; 
+}
+#memo ul li{
+    display:inline;  
+}
+
+#tab1:checked ~ #notice, 
+#tab2:checked ~ #memo {
+    display:block;
+}
+
+/* 공지사항 리스트 스타일 */
+.tabContent li::marker {
+    content: "🍊"
+}
+
+.tabContent li:hover::marker {
+    content: "😊";
+}
+
+.tabContent li:hover{
+    cursor: help;
+}
+
+/* 이미지슬라이드 */
+.w3-display-container {
+    margin: 10px auto;
+}
+
+/* 메인콘텐츠 > 하단박스 */
+.main-bottom-box {
+    margin: 15px auto;
+    width: 833px;
+    height: 110px;
+    background-color: #fabd889f;
+    border: 3px dashed #ff8518;
+    border-radius: 10px;
+}
+
+/* 이미지슬라이드 밑에 div 박스 */
+.hidden {
+    opacity:0;
+}
+.console-container {
+    font-family: 'Ultra', serif;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align:center;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
+
+@media screen and (max-width: 1530px) {
+
+    section {
+        display: flex;
+    }
+
+    #mainContent {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    aside {
+        flex-direction: column;
+        align-items: flex-end;
+        /* width: 100%; */
+    }
+}
+
+/* 퀵슬롯 */
+.quickslot {
+    width: 120px;
+    height: 350px;
+    position: fixed;
+    left: -110px;
+    top: 220px;
+
+    background-color: rgb(255, 195, 85);
+    border: 3px solid rgb(255, 186, 58);
+    border-radius: 40px;
+
+    padding: 20px;
+
+    /* 02.css > 15_transition.html 참고 */
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+
+    
+}
+
+.quickslot ul {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 17px;
+}
+
+.quickslot ul li {
+    text-align: center;
+}
+
+.quickslot ul li i {
+    font-size: 60px;
+    color: orangered;
+}
+
+.quickslot ul li:not(:first-child){
+    margin-top: 30px;
+}
+
+.quickslot ul li i:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(0.85);
+}
+
+.quickslot:hover {
+    transform: translateX(115px);
+}
+
+.quickslot span {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 800;
+}

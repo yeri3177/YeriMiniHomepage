@@ -1,0 +1,109 @@
+/* 중앙콘텐츠 영역 전체 */
+#middleContents	{
+    background-color: #ff841831; /* 배경색 */
+    height: 750px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* 영역확인용 */
+    /* border : 1px solid black; */
+}
+
+/* #middleContents > 메인콘텐츠 영역 */
+#mainContent{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 45px;
+    /* text-align: center; */
+
+    /* 영역 확인용 */
+    /* border : 1px solid blue; */
+}
+
+/* 회원조회하기 버튼  */
+.memBtn {
+    /* margin-left: 37px; */
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff963a;
+
+}
+
+.memDel {
+    width: 80px;
+    height: 30px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+
+}
+
+/* 인덱스 */
+th:nth-child(1) {
+    width: 80px;
+}
+
+/* 아이디 */
+th:nth-child(2) {
+    width: 120px;
+}
+
+/* 이름 */
+th:nth-child(3) {
+    width: 100px;
+}
+
+/* 성별 */
+th:nth-child(4) {
+    width: 70px;
+}
+
+/* 이메일 */
+th:nth-child(5) {
+    width: 180px;
+}
+
+/* 좋아하는것 */
+th:nth-child(6) {
+    width: 230px;
+}
+
+/* 메일수신 */
+th:nth-child(7) {
+    width: 90px;
+}
+
+/* 개인정보 */
+th:nth-child(8) {
+    width: 90px;
+}
+
+/* 가입일자 */
+th:nth-child(9) {
+    width: 150px;
+}
+
+/* 삭제하기 */
+th:nth-child(10) {
+    width: 100px;
+}
+
+.btns {
+    padding-left: 34px;
+}
+

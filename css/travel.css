@@ -1,0 +1,119 @@
+/* 중앙콘텐츠 영역 전체 */
+#middleContents	{
+    background-color: #ff841831; /* 배경색 */
+    height: 2450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    /* 영역확인용 */
+    /* border : 1px solid black; */
+}
+
+/***************************
+ 전체
+***************************/
+.insta {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    background-color: white;
+
+    width: 600px;
+    height: 750px;
+
+    
+}
+/***************************
+ 상단영역 
+***************************/
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.top .left img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.instaid {
+    font-weight: bold;
+    /* color: red; */
+}
+
+.top .right {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+
+/***************************
+ 이미지영역 
+***************************/
+.middle {
+    box-sizing: border-box;
+}
+.bx-wrapper img {
+    width: 100%!important;
+    height:430px;
+    /* box-sizing: border-box; */
+}
+
+.bx-wrapper {
+    margin: 0;
+    border: 0!important;
+    box-sizing: border-box;
+}
+
+/***************************
+ 하단영역 
+***************************/
+.bottom {
+    padding: 10px 18px;
+    height:225px;
+    position: relative;
+    top: -60px;
+}
+
+.icons {
+    font-size: 27px;
+    /* padding: 5px; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.lefticon i {
+    margin-right: 10px;
+}
+
+.date {
+    font-size: 15px;
+    color:rgb(97, 97, 97);
+    /* position: absolute;
+    bottom: -155px; */
+}
+
+i:active {
+    color: #ff8518;
+    transform: scale(1.3);
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.fas.fa-heart {
+    color: red;
+}
+
+.tag {
+    /* color: rgb(51, 51, 253); */
+    color: rgb(11, 0, 160);
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yerizip</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../image/tangerine_icon.png">
+  <link rel="icon" href="../image/tangerine_icon.png">
+  <link rel="apple-touch-icon" href="../image/tangerine_icon.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../css/frame.css">
+  <link rel="stylesheet" href="../css/join.css">
+  <link rel="stylesheet" href="../css/w3c-imgslige.css">
+
+  
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 한글폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+
+  <!-- 영문폰트1 (로고,네비 등) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+  <!-- 영문폰트2 (푸터 등) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Varela+Round&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- 전체 div -->
+<div id="container">
+  
+  <!-- 헤더 -->
+  <header>
+    <!-- 헤더 가운데 콘텐츠 영역 -->
+    <div id="headerContents"  class="contents">
+
+      <!-- 로고 -->
+      <div class="logo">
+        <a href="./index.html">
+          <img src="../image/tangerine_icon.png" alt="귤아이콘">
+          <span>yerizip*</span>
+        </a>
+      </div>
+
+      <!-- 로그인/회원가입 -->
+      <div class="login">
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+      </div>
+
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav>
+      <ul class="navi">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./introduce.html">introduce</a></li>
+        <li><a href="./travel.html">travel</a></li>
+        <li><a href="#">roadmap</a></li>
+        <li><a href="./join.html">join</a></li>
+      </ul>
+    </nav> 
+  </header>
+
+
+
+
+  <!-- 중앙 콘텐츠 영역 전체-->
+  <section id="middleContents">
+
+    <div id="mainContent">
+
+      <!-- 회원가입폼 -->
+      <form action="javascript:joinMember();" name="joinForm"></form>
+
+        <fieldset id="joinFrm">
+          <label for="userId">아이디</label>
+          <span class="req">*</span>
+          <br>
+          <input type="text" name="userId" id="userId" class="inputText text1" required placeholder="영문,숫자로 이루어진 4~12글자">
+          <br><br>
+
+
+          <label for="pwd">비밀번호</label>
+          <span class="req">*</span>
+          <br>
+          <input type="password" name="pwd" id="pwd" class="inputText text1" required placeholder="숫자,문자,특문 포함 8~15글자">
+          <br><br>
+
+
+          <label for="pwdChk">비밀번호 재확인</label>
+          <span class="req">*</span>
+          <br>
+          <input type="password" name="pwdChk" id="pwdChk" class="inputText text1" required placeholder="숫자,문자,특문 포함 8~15글자">
+          <p id="pwdText"></p>
+          <br>
+
+
+          <label for="userName">이름</label>
+          <span class="req">*</span>
+          <br>
+          <input type="text" name="userName" id="userName" class="inputText text1" required  placeholder="한글 2글자 이상">
+          <br><br>
+
+
+          <label for="gender">성별</label>
+          <span class="req">*</span>
+          <br>
+          <input type="radio" name="gender" id="genderMale" value="male" checked>
+          <label for="male">남</label>
+          <input type="radio" name="gender" id="genderFemale" value="female">
+          <label for="female">여</label>
+          <br><br>
+
+
+          <label for="">이메일</label>
+          <span class="req">*</span>
+          <br>
+          <input type="text" name="emailId" id="emailId" class="inputText text2" required> @ 
+          <input type="text" name="emailAddress" id="emailAddress" class="text2">
+          <select name="emailSelect" id="emailSelect" onchange="emailSelect();">
+            <option value="">직접입력</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="gmail.com">gmail.com</option>
+          </select>
+          <br><br>
+
+
+          <label for="">좋아하는것</label><br>
+          <input type="checkbox" name="favorite" id="favorite1" value="민초">
+          <label for="favorite1">민초</label>
+
+          <input type="checkbox" name="favorite" id="favorite2" value="하와이안피자">
+          <label for="favorite2">하와이안피자</label>
+
+          <input type="checkbox" name="favorite" id="favorite3" value="얼죽아">
+          <label for="favorite3">얼죽아</label>
+
+          <input type="checkbox" name="favorite" id="favorite4" value="고수">
+          <label for="favorite4">고수</label><br>
+
+          <input type="checkbox" id="checkAll" onclick="favAllChk();">
+          <label for="checkAll">전체선택</label>
+
+          <input type="checkbox" id="notCheck" onclick="favNotChk();">
+          <label for="notCheck">선택해제</label>
+          
+
+          <br><br><br>
+          <input type="checkbox" name="mailReceive" id="mailReceive" value="mailReceive"> 
+          <a href="#">메일수신여부
+            <span class="sel">[선택]</span>
+          </a><br>
+          
+          <input type="checkbox" name="userInfoCol" id="userInfoCol" value="userInfoCol"> 
+          <a href="#">개인정보 수집 동의
+            <span class="req">[필수]</span>
+          </a>
+          <br><br><br>
+          <button type="button" id="joinBtn" onclick="joinform_check();">가입하기</button>
+        </fieldset>
+      </form>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- 푸터 -->
+  <footer>
+    <!-- 푸터 가운데 콘텐츠 영역 -->
+    <div id="fonnterContents" class="contents">
+
+      <!-- sns 이미지 영역 -->
+      <div id="sns" class="sns">
+        <ul>
+          <li>
+            <a href="#" title="인스타그램"> 
+              <img src="../image/mf_insta.png" alt="인스타그램">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="페이스북">
+              <img src="../image/mf_facebook.png" alt="페이스북">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="유튜브">
+              <img src="../image/mf_youtube.png" alt="유튜브">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="네이버블로그">
+              <img src="../image/mf_blog.png" alt="네이버블로그">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p>COPYRIGHT ©JUNGYERI ALL RIGHTS RESERVED.</p>
+
+    </div>
+  </footer>
+
+</div>
+
+<!-- js -->
+<script src="../js/jquery-3.6.0.js"></script>
+<script src="../js/join.js"></script>
+
+</body>
+</html>

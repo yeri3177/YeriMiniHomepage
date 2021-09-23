@@ -1,0 +1,123 @@
+/* 중앙콘텐츠 영역 전체 */
+#middleContents	{
+    background-color: rgb(240, 240, 240); /* 배경색 */
+    height: 700px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* 영역확인용 */
+    /* border : 1px solid black; */
+}
+
+footer {
+    background-color: lightblue;
+}
+
+/* #middleContents > 메인콘텐츠 영역 */
+#mainContent{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 60px;
+
+    position: relative;
+
+    /* 영역 확인용 */
+    /* border : 1px solid blue; */
+}
+
+
+/****************************** 
+* 자기소개 영역 
+*******************************/
+#mainContent img {
+    border-radius: 50%;
+    width: 200px;
+    box-shadow: 4px 4px 4px 1px grey;
+    background-color: skyblue;
+}
+
+#mainContent img:hover {
+    cursor: pointer;
+}
+
+#mainContent p {
+    margin: 0;
+}
+
+p.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+    padding: 20px 0;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 5px;
+    font-size: 23px;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: 900;
+}
+
+td:last-child {
+    text-align: left;
+}
+
+
+/****************************** 
+* 이모지 위치 정렬 
+*******************************/
+.emoji {
+    position: absolute;
+    display: none;
+}
+
+.emoji1 {
+    top: 120px;
+    left : 80px;
+}
+
+.emoji2 {
+    top: 180px;
+    right : 80px;
+}
+
+.emoji3 {
+    top: 330px;
+    left : 170px;
+}
+
+.emoji4 {
+    top: 390px;
+    left : 430px;
+}
+
+.emoji5 {
+    top: 560px;
+    right : 290px;
+}
+
+.emoji6{
+    top: 200px;
+    right : 450px;
+    
+}
+
+.emoji7 {
+    top: 560px;
+    left : 260px;
+    
+}
+
+.emoji8 {
+    top: 320px;
+    right : 290px;
+}
