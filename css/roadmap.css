@@ -1,0 +1,27 @@
+#mainContent {
+    text-align: center;
+
+    
+}
+#dev_box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+    margin: 0 auto;
+}
+#top_text_box {
+    font-size: 50px;
+}
+
+.devBox {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.inner_text_box {
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
