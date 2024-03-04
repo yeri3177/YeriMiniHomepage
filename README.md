@@ -51,10 +51,11 @@
 [![Linkedin Badge](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/yeri3177/yeri3177.github.io)](https://github.com/yeri3177/yeri3177.github.io)
 프로젝트깃헙주소
 
-<!-- 유튜브 뱃지 -->
+<!-- 유튜브 뱃지
 [![Youtube Badge](https://img.shields.io/badge/Youtube-ff0000?style=flat-square&logo=youtube&link=https://youtu.be/IwhNckpHgbY)](https://youtu.be/IwhNckpHgbY)
 프로젝트발표영상
-
-<!-- 지메일 뱃지 -->
+ -->
+<!-- 지메일 뱃지 
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:yeri3177@gmail.com)](mailto:yeri3177@gmail.com)
 구글메일
+-->
