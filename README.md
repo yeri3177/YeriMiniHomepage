@@ -45,13 +45,16 @@
 
 
 
-## 🍊 more..
+## 🍊 팀구성
+YERI (1명)
+
+<!--
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white&link=https://jyr3177.notion.site/73fabc07e1194d77bd440f8d3c25dd23?pvs=4)
   노션에서 프로젝트에 대한 디테일한 설명을 보실 수 있습니다.
 
 ![Linkedin Badge](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white&link=https://github.com/yeri3177/yeri3177.github.io)
   깃허브 레포지토리 
-<!-- 유튜브 뱃지
+ 유튜브 뱃지
 [![Youtube Badge](https://img.shields.io/badge/Youtube-ff0000?style=flat-square&logo=youtube&link=https://youtu.be/IwhNckpHgbY)](https://youtu.be/IwhNckpHgbY)
 프로젝트발표영상
  -->
